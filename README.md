@@ -1,4 +1,4 @@
-# Batch Management System
+# CURD Microservice API
 
 A full-stack web application for managing batch entries, built with **React (Vite)** for the frontend and **Spring Boot + MongoDB** for the backend.  
 It provides CRUD functionality to add, edit, view, and delete batch records with name and fees details.
@@ -50,15 +50,30 @@ It provides CRUD functionality to add, edit, view, and delete batch records with
     │ ├── App.jsx
     │ ├── App.css
     │ └── api/studentService.js
+
+---
+## 📡 API Endpoints
+
+    Method	Endpoint	Description
+    GET	/api/batches	Get all batch entries
+    GET	/api/batches/{id}	Get batch by ID
+    POST	/api/batches	Create new batch entry
+    PUT	/api/batches/{id}	Update batch entry
+    DELETE	/api/batches/{id}	Delete batch entry
+
+---
+
+## 🧪 Health Check
+
+   -Backend health check endpoint:
     
-### Backend (Spring Boot)
+    GET /health
+---
 
-  cd backend
-  # Configure MongoDB connection in application.properties
-  mvn clean install
-  mvn spring-boot:run
+## 👨‍💻 Author
 
-##Frontend (React + Vite)
-  cd frontend
-  npm install
-  npm run dev
+    
+    -Karan Jadhav
+    📧 karanjadhav0027@gmail.com
+     
+---
